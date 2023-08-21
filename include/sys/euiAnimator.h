@@ -14,7 +14,7 @@ namespace ui2d {
 namespace eui {
 class LayoutEx;
 
-class Animator : public AnimTransformBasic {
+class Animator : public nn::ui2d::AnimTransformBasic {
 public:
     NN_RUNTIME_TYPEINFO(AnimTransformBasic);
 
