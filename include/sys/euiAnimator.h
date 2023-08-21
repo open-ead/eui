@@ -2,13 +2,11 @@
 
 #include <nn/font/font_Util.h>
 #include <nn/ui2d/ui2d_Animation.h>
-#include <nn/ui2d/ui2d_Pane.h>
 
 namespace nn {
 namespace ui2d {
 class Group;
-class AnimTransformBasic;
-class AnimResource;
+class Pane;
 } // namespace ui2d
 } // namespace nn
 
