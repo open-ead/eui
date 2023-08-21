@@ -7,8 +7,8 @@ namespace nn {
 namespace ui2d {
 class Group;
 class Pane;
-} // namespace ui2d
-} // namespace nn
+}  // namespace ui2d
+}  // namespace nn
 
 namespace eui {
 class LayoutEx;
@@ -28,11 +28,16 @@ public:
     virtual void PlayRandom(PlayType type, f32 speed);
     virtual void SetEnabled(bool bEnabled);
 
-    virtual void SetupBasic(const nn::ui2d::AnimResource& animRes, LayoutEx* pLayoutEx, bool enabled);
-    virtual void SetupWithGroup(const nn::ui2d::AnimResource& animRes, LayoutEx* pLayoutEx, nn::ui2d::Group* pGroup, bool enabled);
-    virtual void SetupWithGroupAll(const nn::ui2d::AnimResource& animRes, LayoutEx* pLayoutEx, nn::ui2d::GroupContainer* pGroupCont, bool enabled);
-    virtual void SetupWithGroupIndex(const nn::ui2d::AnimResource& animRes, LayoutEx* pLayoutEx, nn::ui2d::GroupContainer* pGroupCont, u32 idx, bool enabled);
-    virtual void SetupWithPane(const nn::ui2d::AnimResource& animRes, LayoutEx* pLayoutEx, nn::ui2d::Pane* pPane, bool enabled);
+    virtual void SetupBasic(const nn::ui2d::AnimResource& animRes, LayoutEx* pLayoutEx,
+                            bool enabled);
+    virtual void SetupWithGroup(const nn::ui2d::AnimResource& animRes, LayoutEx* pLayoutEx,
+                                nn::ui2d::Group* pGroup, bool enabled);
+    virtual void SetupWithGroupAll(const nn::ui2d::AnimResource& animRes, LayoutEx* pLayoutEx,
+                                   nn::ui2d::GroupContainer* pGroupCont, bool enabled);
+    virtual void SetupWithGroupIndex(const nn::ui2d::AnimResource& animRes, LayoutEx* pLayoutEx,
+                                     nn::ui2d::GroupContainer* pGroupCont, u32 idx, bool enabled);
+    virtual void SetupWithPane(const nn::ui2d::AnimResource& animRes, LayoutEx* pLayoutEx,
+                               nn::ui2d::Pane* pPane, bool enabled);
 
     virtual void Stop(f32 frame);
     virtual void StopAtMin();
@@ -41,4 +46,4 @@ public:
     virtual void Synchronize(const Animator& animator);
     virtual void UpdateFrame(f32 progress_frame);
 }
-} // namespace eui
+}  // namespace eui
