@@ -17,7 +17,7 @@ class Animator : public nn::ui2d::AnimTransformBasic {
 public:
     NN_RUNTIME_TYPEINFO(AnimTransformBasic);
 
-    enum PlayType { PLAYTYPE_ONESHOT, PLAYTYPE_LOOP, PLAYTYPE_ROUNDTRIP };
+    enum class PlayType { PLAYTYPE_ONESHOT, PLAYTYPE_LOOP, PLAYTYPE_ROUNDTRIP };
 
     Animator();
     virtual ~Animator();
