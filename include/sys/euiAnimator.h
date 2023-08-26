@@ -45,5 +45,5 @@ public:
     virtual void StopCurrent();
     virtual void Synchronize(const Animator& animator);
     virtual void UpdateFrame(f32 progress_frame);
-}
+};
 }  // namespace eui
