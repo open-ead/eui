@@ -1,9 +1,11 @@
 project(eui CXX ASM)
 
-add_library(eui OBJECT
-	include/euiControlBase.h
+file(GLOB_RECURSE HEADER_FILES "include/*.h")
+file(GLOB_RECURSE SRC "src/*.cpp")
 
-	src/euiControlBase.cpp
+add_library(eui OBJECT
+	${HEADER_FILES}
+	${SRC}
 )
 
 target_compile_options(eui PRIVATE -fno-exceptions)
@@ -15,3 +17,8 @@ if(NOT TARGET agl)
   add_subdirectory(../agl)
 endif()
 target_link_libraries(eui PUBLIC agl)
+if(NOT TARGET sead)
+	add_subdirectory(../sead)
+endif()
+
+target_link_libraries(eui PUBLIC sead)
