@@ -22,6 +22,7 @@ class FontMgr {
     SEAD_SINGLETON_DISPOSER(FontMgr)
 public:
     FontMgr();
+    virtual ~FontMgr();
 
     void initialize(sead::Heap*, void*, u32, const sead::Buffer<const char*>&,
                     eui::ScalableFontMgr*);
@@ -36,12 +37,11 @@ public:
     void setRubyFont(const sead::SafeString&);
     void setRubyFont(const nn::font::Font*);
     bool isScalableFont(const sead::SafeString&) const;
-    void findFontName(sead::BufferedSafeString*, const nn::font::Font*) const;
+    bool findFontName(sead::BufferedSafeString*, const nn::font::Font*) const;
 
     ScalableFontMgr* getScalableFontMgr() const { return mScalableFontMrg; }
 
 private:
-    char filler[0x8];
     SharcArchive mSharcArchive;
     sead::PtrArray<nn::font::ResFont> _30;
     sead::PtrArray<nn::font::Font> _40;

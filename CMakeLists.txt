@@ -1,12 +1,12 @@
 project(eui CXX ASM)
 
 add_library(eui OBJECT
-	include/euiControlBase.h
-	include/message/euiScalableFontMgr.h
-	include/message/euiFontMgr.h
-	include/sys/euiSharcArchive.h
+    include/euiControlBase.h
+    include/message/euiFontMgr.h
+    include/message/euiScalableFontMgr.h
+    include/sys/euiSharcArchive.h
 
-	src/euiControlBase.cpp
+    src/euiControlBase.cpp
 )
 
 target_compile_options(eui PRIVATE -fno-exceptions)

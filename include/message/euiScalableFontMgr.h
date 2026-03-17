@@ -23,6 +23,7 @@ public:
     struct InitializeArg;
 
     ScalableFontMgr();
+    virtual ~ScalableFontMgr();
 
     void initialize(const InitializeArg&);
     void update();

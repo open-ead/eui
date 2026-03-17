@@ -13,13 +13,14 @@ public:
     class FileReader;
 
     SharcArchive();
+    ~SharcArchive();
 
     void finalize();
     void initialize(sead::Heap*, void*, u32);
     void startFileReader(eui::SharcArchive::FileReader*) const;
 
 private:
-    char _filler[0x8];
+    sead::Resource* mResource;
 };
 
 static_assert(sizeof(SharcArchive) == 0x8);
