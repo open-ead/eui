@@ -2,6 +2,7 @@
 
 #include <basis/seadTypes.h>
 #include <container/seadBuffer.h>
+#include <heap/seadDisposer.h>
 #include <prim/seadSafeString.h>
 
 #include "sys/euiSharcArchive.h"
@@ -14,6 +15,10 @@ namespace nn::font {
 class Font;
 class ResFont;
 }  // namespace nn::font
+
+namespace nn::ui2d {
+class ResourceAccessor;
+}  // namespace nn::ui2d
 
 namespace eui {
 class ScalableFontMgr;

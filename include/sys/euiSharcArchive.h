@@ -4,7 +4,8 @@
 
 namespace sead {
 class Heap;
-}
+class Resource;
+}  // namespace sead
 
 namespace eui {
 

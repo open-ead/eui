@@ -46,7 +46,7 @@ private:
                          s32, bool);
     bool isNeedPlot_(char16, u32, u32);
 
-    char filler[0x18];
+    char filler[0x10];
     nn::font::TextureCache* _38;
     sead::Thread* _40;
     ScalableFontTextBoxEx* _48;
