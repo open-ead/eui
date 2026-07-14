@@ -12,10 +12,10 @@ class MessageSet;
 class MessageMgr {
     SEAD_RTTI_BASE(MessageMgr);
     SEAD_SINGLETON_DISPOSER(MessageMgr);
-    
+
 public:
     class Archive;
-    
+
 public:
     MessageMgr();
     virtual ~MessageMgr();
