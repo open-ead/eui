@@ -2,6 +2,7 @@
 
 #include <basis/seadTypes.h>
 #include <container/seadBuffer.h>
+#include <container/seadPtrArray.h>
 #include <heap/seadDisposer.h>
 #include <prim/seadSafeString.h>
 
