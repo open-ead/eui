@@ -1,9 +1,9 @@
 #pragma once
 
-#include <sead/gfx/seadColor.h>
-#include <sead/heap/seadDisposer.h>
-#include <sead/prim/seadRuntimeTypeInfo.h>
-#include <sead/prim/seadSafeString.h>
+#include <gfx/seadColor.h>
+#include <heap/seadDisposer.h>
+#include <prim/seadRuntimeTypeInfo.h>
+#include <prim/seadSafeString.h>
 
 namespace eui {
 
